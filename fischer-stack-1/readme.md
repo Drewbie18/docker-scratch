@@ -37,6 +37,7 @@ In order to deploy docker stack files to a Virtualbox vm on your local machine y
 
 ### PowerShell
 - Add scp.ext to you PATH in windows
-- command scp .\foo.txt 192.168.99.100:/home/docker
+- command scp foo.txt docker@192.168.99.100:/home/docker
+- the default password for the docker-machine vm is username: docker, password: tcuser
 
 
