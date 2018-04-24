@@ -24,3 +24,20 @@ This is using Docker Toolbox on windows 10 home.
 - Run that command in vm2. Should get a response as "This node joined swarm as worker"
 
 
+
+# Adding Files to Vm's
+
+In order to deploy docker stack files to a Virtualbox vm on your local machine you may want to copy files from your machine (host) to the vm's. Here are some options. 
+
+## Docker Machine SCP
+
+### Git Bash SCP
+- Install git, should come with git bash
+- Command: scp ./foo.txt vm1:/home/docker
+
+### PowerShell
+- Add scp.ext to you PATH in windows
+- command scp foo.txt docker@192.168.99.100:/home/docker
+- the default password for the docker-machine vm is username: docker, password: tcuser
+
+

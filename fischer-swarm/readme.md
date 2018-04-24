@@ -72,3 +72,10 @@ window.
 
 ### Command
 - docker service create --name result --network backend -p 5001:5001 dockersamples/examplevotingapp_result:before
+
+
+
+## Secrets On Swarm
+
+- On Manager node
+- Command: "echo "SOMESECRET" | docker secret create some_secret - "
